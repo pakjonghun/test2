@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+
+    //cypress 가 설치된 장소
+    "baseUrl": "../node_modules",
+    "types": ["cypress"],
+
+    //outdoor 가 뭐든간에 상관없다!
+    "outDir": "#"
+  },
+  //모든 파일 폴더 포함
+  "include": ["./**/*.*"]
+}
