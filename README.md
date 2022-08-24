@@ -44,6 +44,7 @@ npm test -- --coverage
 - 테스트 할 파일 범위 지정을 glob pattern 으로 배열로 지정한다.
 
 ```
+//.eslintrc.json
   "jest": {
     "collectCoverageFrom": [
       "**/*.{tsx,ts}",
@@ -52,6 +53,15 @@ npm test -- --coverage
       "!**/src/**/reportWebVitals.ts"
     ]
   }
+  
+//.vscode 폴더 > setting.json.   vscode 단독 옵션 적용
+
+{
+  "eslint.options":{
+    configFile:".eslintrc.json"
+  }
+  
+}
 ```
 
 ### eslint 설정
